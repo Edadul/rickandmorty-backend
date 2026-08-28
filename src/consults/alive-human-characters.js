@@ -1,3 +1,3 @@
 export const getAliveHumanCharacters = (character) => {
-  return character.filter((c) => c.estado === "Alive" && c.especie === "Human");
+  return character.filter((c) => c.status === "Alive" && c.species === "Human");
 };
