@@ -1,4 +1,4 @@
 import { getAllpages } from "../api/get_all_pages.js";
 
-export const [ lista, time ] = await getAllpages()
-console.log(lista)
+export const [ list, time ] = await getAllpages()
+console.log(list, 'Tiempo: ', time)

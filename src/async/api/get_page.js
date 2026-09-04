@@ -1,5 +1,5 @@
-import { API } from "../index.js"
-import { getCharacters } from "./get_characters.js"
+import { getCharacters } from "./get_characters.js";
+import { API } from "./url.js";
 
 export function getPage (page) {
     return new Promise((resolve) => {
