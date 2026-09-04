@@ -1,3 +1,4 @@
-import { list, time } from "./get_characters/concurrent_queries.js";
+import { getAllPagesConcurrently } from "./api/get_all_pages.js";
 
-console.log(list, 'Tiempo: ', time);
+export const [ list, time ] = await getAllPagesConcurrently()
+console.log(list, 'Tiempo: ', time)

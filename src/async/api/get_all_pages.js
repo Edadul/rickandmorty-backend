@@ -11,7 +11,8 @@ export async function getAllpages() {
         characters.push(page.results)
     }
     const endTime = performance.now()
-    return [characters, `Time: ${endTime - initTime}`]
+    const time = endTime - initTime
+    return [characters, time]
 }
 
 
@@ -34,5 +35,6 @@ export async function getAllPagesConcurrently() {
     }
     const characters = pages.map(page => page.results)
     const endTime = performance.now()
-    return [characters, `Time: ${endTime - initTime}`]
+    const time = endTime - initTime
+    return [characters, time]
 }
